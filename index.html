@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Xiaojuan (Jeanne) Wang</title>
+
+    <meta name="author" content="Xiaojuan (Jeanne) Wang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Xiaojuan (Jeanne) Wang
+                </p>
+                <p>
+                  I'm a Ph.D student in <a href="https://grail.cs.washington.edu/">GRAIL</a>, University of Washington, advised by <a href="https://www.smseitz.com/">Steve Seitz</a>, and <a href="https://homes.cs.washington.edu/~curless/">Brian Curless</a>, and also working with <a href="https://holynski.org/">Aleksander Holynski</a>. 
+                </p>
+                  Before, I received my Master's degree from ETH Zurich, working with <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en">Martin Oswald</a> in <a href="https://cvg.ethz.ch/">CVG</a> lab. I have also spent summer times interning at <a href="https://about.meta.com/realitylabs/">Meta</a>, <a href="https://research.adobe.com/">Adobe Research</a>, and <a href="https://ai.google/">Google Research</a>
+                <p>
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:xiaojuanwang.cs@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="data/cv.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=v3NXpJAAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://twitter.com/xiaojuan_wang7">Twitter</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/jeanne-wang">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="images/profile.jpeg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/profile.jpeg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  I am broadly interested in generative AI, especially AI for content creation. More specifically video and 3D scene synthesis. 
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="recon_stop()" onmouseover="recon_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='zoom_thumbnail'><video  width=100% height=100% muted autoplay loop>
+                  <source src="images/zoom_thumbnail.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/zoom_thumbnail.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function recon_start() {
+                    document.getElementById('zoom_thumbnail').style.opacity = "1";
+                  }
+
+                  function recon_stop() {
+                    document.getElementById('zoom_thumbnail').style.opacity = "0";
+                  }
+                  recon_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://powers-of-10.github.io/">
+        			<span class="papertitle">Generative Powers of Ten</span>
+                </a>
+                <br>
+                <strong>Xiaojuan Wang</strong>,
+        		    <a href="https://www.linkedin.com/in/jannekontkanen/">Janne Kontkanen</a>,
+                <a href="https://homes.cs.washington.edu/~curless/">Brian Curless</a>,
+                <a href="https://www.smseitz.com/">Steve Seitz</a>,
+                <a href="https://www.irakemelmacher.com/">Ira Kemelmacher</a>,
+                <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+                <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
+                <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+                <a href="https://holynski.org/">Aleksander Holynski</a>
+                <br>
+                <em>arXiv</em>, 2023
+                <br>
+                <a href="https://powers-of-10.github.io/">project page</a>
+                /
+                <a href="https://arxiv.org/abs/2312.02149">arXiv</a>
+                <p></p>
+                <p>
+                Given a series of prompts describing a scene at drastically varying scales, our method creates a seamless zooming video.
+                </p>
+              </td>
+            </tr>
+            <tr onmouseout="jumpcut_stop()" onmouseover="jumpcut_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='jumpcut_thumbnail'><video  width=100% height=100% muted autoplay>
+                  <source src="images/jumpcut_thumbnail.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/jumpcut_thumbnail.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function jumpcut_start() {
+                    document.getElementById('jumpcut_thumbnail').style.opacity = "1";
+                  }
+
+                  function jumpcut_stop() {
+                    document.getElementById('jumpcut_thumbnail').style.opacity = "0";
+                  }
+                  recon_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="">
+              <span class="papertitle">Jump Cut Smoothing for Talking Heads</span>
+                </a>
+                <br>
+                <strong>Xiaojuan Wang</strong>,
+                <a href="https://taesung.me/">Taesung Park</a>,
+                <a href="https://yzhou359.github.io/">Yang Zhou</a>,
+                <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>,
+                <a href="https://richzhang.github.io/">Richard Zhang</a>,
+                <br>
+                <em>arXiv</em>, 2023
+                <br>
+                <a href="">project page</a>
+                /
+                <a href="">arXiv</a>
+                <p></p>
+                <p>
+                Given a talking head video, we remove the the filler words, repetitive words and so on, and create a seamless transition for the jump cut.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <img src='images/octree.png' width="160">
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://link.springer.com/chapter/10.1007/978-3-030-33676-9_41">
+              <span class="papertitle">Learning 3D Semantic Reconstruction on Octrees</span>
+                </a>
+                <br>
+                <strong>Xiaojuan Wang</strong>,
+                <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en">Martin Oswald</a>,
+                <a href="https://scholar.google.com/citations?user=RvYjtUUAAAAJ&hl=fr">Ian Cherabier</a>,
+                <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>,
+                <br>
+                <em>GCPR</em>, 2019
+                <br>
+                <a href="https://link.springer.com/chapter/10.1007/978-3-030-33676-9_41">pdf</a>
+                <p></p>
+                <p>
+                We present a novel framework for multi-view semantic 3D reconstruction that takes the octree of TSDFs fused from different camera views as input, and generates an octree as semantic reconstruction output.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2>Earlier works</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td>
+                <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Wang_Supervised_Quantization_for_CVPR_2016_paper.pdf">Supervised quantization for similarity search (CVPR 2016)</a>
+                <br>
+                <a href="https://openaccess.thecvf.com/content_iccv_2015/papers/Li_Multi-Scale_Learning_for_ICCV_2015_paper.pdf">Multi-scale learning for low-resolution person re-identification (ICCV 2015)</a>
+                <br>
+                <a href="https://ieeexplore.ieee.org/abstract/document/7137647">Cross-scenario transfer person reidentification (TCSVT 2015)</a>
+              </td>
+            </tr>   
+            
+          </tbody></table>
+
+          
+          <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2>Miscellanea</h2>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
+              <td width="75%" valign="center">
+                <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>
+                <br>
+                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
+                <br>
+                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
+                <br>
+                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Award Committee Member, CVPR 2021</a>
+                <br>
+                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
+                <br>
+                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
+              </td>
+            </tr>   
+          </tbody></table> -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+              <br>
+              <p style="text-align:center;font-size:small;">
+                This website borrows the template from <a href="https://jonbarron.info/">Jon Barron</a>
+              </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
