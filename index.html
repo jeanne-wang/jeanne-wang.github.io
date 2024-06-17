@@ -8,7 +8,7 @@
     <meta name="keywords" content="Xiaojuan Wang, UW, Xiaojuan Jeanne Wang">
     <meta name="author" content="Xiaojuan (Jeanne) Wang">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/uw.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="data/uw.jpeg" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     
   </head>
@@ -26,7 +26,7 @@
                 <p>
                   I'm a Ph.D student in <a href="https://grail.cs.washington.edu/">GRAIL</a>, University of Washington, advised by <a href="https://www.smseitz.com/">Steve Seitz</a>, <a href="https://homes.cs.washington.edu/~curless/">Brian Curless</a> and <a href="https://www.irakemelmacher.com/">Ira Kemelmacher</a>.
                 </p>
-                  Before, I received my Master's degree from ETH Zurich, working with <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en">Martin Oswald</a> in <a href="https://cvg.ethz.ch/">CVG</a> lab. I have also spent summer times interning at <a href="https://about.meta.com/realitylabs/">Meta</a>, <a href="https://research.adobe.com/">Adobe Research</a>, and <a href="https://ai.google/">Google Research</a>.
+                  Previously, I received my Master's degree from ETH Zurich, working in the <a href="https://cvg.ethz.ch/">CVG</a> lab. I have also interned at Meta, Adobe Research with <a href="https://richzhang.github.io/"> Richard Zhang</a> <a href="https://taesung.me/"> Taesung Park </a>, and Google Research with <a href="https://holynski.org"> Aleksander Holynski </a> during summers.
                 <p>
                 <p>
                   I am broadly interested in generative AI, especially AI for video content creation.
@@ -41,7 +41,7 @@
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/profile2.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/profile2.jpg" class="hoverZoomLink"></a>
+                <a href="data/profile2.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="data/profile2.jpg" class="hoverZoomLink"></a>
               </td>
             </tr>
           </tbody></table>
@@ -53,14 +53,56 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <!-- <tr onmouseout="keyframe_stop()" onmouseover="keyframe_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='keyframe_thumbnail'><video  width=100% height=100% muted autoplay loop>
+                  <source src="projects/keyframe_thumbnail.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='projects/keyframe_thumbnail.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function keyframe_start() {
+                    document.getElementById('keyframe_thumbnail').style.opacity = "1";
+                  }
+
+                  function keyframe_stop() {
+                    document.getElementById('keyframe_thumbnail').style.opacity = "0";
+                  }
+                  keyframe_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+              <span class="papertitle">Generative Keyframe Interpolation with Forward-Backward Consistency</span>
+                <br>
+                <strong>Xiaojuan Wang</strong>,
+                <a href="https://www.linkedin.com/in/zby2003/">Boyang Zhou</a>,
+                <a href="https://holynski.org/">Aleksander Holynski</a>,
+                <a href="https://homes.cs.washington.edu/~curless/">Brian Curless</a>,
+                <a href="https://www.irakemelmacher.com/">Ira Kemelmacher</a>,
+                <a href="https://www.smseitz.com/">Steve Seitz</a>
+                <br>
+                <em>arXiv, 2024 </em>
+                <br>
+                <a href="">project page</a>
+                /
+                <a href="">arXiv (coming soon)</a>
+                <p></p>
+                <p>
+                Given a pair of key frames as input, our method generates a continuous intermediate video with consistent motion (25 frames of size 1024x576) using an image-to-video diffusion model.
+                </p>
+              </td>
+            </tr> -->
+
             <tr onmouseout="recon_stop()" onmouseover="recon_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='zoom_thumbnail'><video  width=100% height=100% muted autoplay loop>
-                  <source src="images/zoom_thumbnail.mp4" type="video/mp4">
+                  <source src="projects/zoom/zoom_thumbnail.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                   </video></div>
-                  <img src='images/zoom_thumbnail.png' width="160">
+                  <img src='projects/zoom/zoom_thumbnail.png' width="160">
                 </div>
                 <script type="text/javascript">
                   function recon_start() {
@@ -76,15 +118,7 @@
               <td style="padding:20px;width:75%;vertical-align:middle">
         			<span class="papertitle">Generative Powers of Ten</span>
                 <br>
-                <strong>Xiaojuan Wang</strong>,
-        		    <a href="https://www.linkedin.com/in/jannekontkanen/">Janne Kontkanen</a>,
-                <a href="https://homes.cs.washington.edu/~curless/">Brian Curless</a>,
-                <a href="https://www.smseitz.com/">Steve Seitz</a>,
-                <a href="https://www.irakemelmacher.com/">Ira Kemelmacher</a>,
-                <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-                <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
-                <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-                <a href="https://holynski.org/">Aleksander Holynski</a>
+                <strong>Xiaojuan Wang</strong>, Janne Kontkanen, Brian Curless, Steve Seitz, Ira Kemelmacher, Ben Mildenhall, Pratul P. Srinivasan, Dor Verbin, Aleksander Holynski
                 <br>
                 <em>CVPR, 2024 (Highlight)</em>
                 <br>
@@ -101,10 +135,10 @@
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='jumpcut_thumbnail'><video  width=100% height=100% muted autoplay>
-                  <source src="images/jumpcut_thumbnail.mp4" type="video/mp4">
+                  <source src="projects/jumpcut/jumpcut_thumbnail.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                   </video></div>
-                  <img src='images/jumpcut_thumbnail.png' width="160">
+                  <img src='projects/jumpcut/jumpcut_thumbnail.png' width="160">
                 </div>
                 <script type="text/javascript">
                   function jumpcut_start() {
@@ -121,10 +155,7 @@
               <span class="papertitle">Jump Cut Smoothing for Talking Heads</span>
                 <br>
                 <strong>Xiaojuan Wang</strong>,
-                <a href="https://taesung.me/">Taesung Park</a>,
-                <a href="https://yzhou359.github.io/">Yang Zhou</a>,
-                <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>,
-                <a href="https://richzhang.github.io/">Richard Zhang</a>
+                Taesung Park, Yang Zhou, Eli Shechtman, Richard Zhang
                 <br>
                 <em>arXiv, 2023</em>
                 <br>
@@ -140,16 +171,13 @@
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
-                  <img src='images/octree.png' width="160">
+                  <img src='projects/octree.png' width="160">
                 </div>
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
               <span class="papertitle">Learning 3D Semantic Reconstruction on Octrees</span>
                 <br>
-                <strong>Xiaojuan Wang</strong>,
-                <a href="https://scholar.google.de/citations?user=biytQP8AAAAJ&hl=en">Martin Oswald</a>,
-                <a href="https://scholar.google.com/citations?user=RvYjtUUAAAAJ&hl=fr">Ian Cherabier</a>,
-                <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>
+                <strong>Xiaojuan Wang</strong>, Martin Oswald, Ian Cherabier, Marc Pollefeys
                 <br>
                 <em>GCPR, 2019</em>
                 <br>
