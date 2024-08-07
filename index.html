@@ -24,43 +24,54 @@
                   Xiaojuan Wang
                 </p>
                 <p>
-                  I'm a Ph.D student in <a href="https://grail.cs.washington.edu/">GRAIL</a>, University of Washington, advised by <a href="https://www.smseitz.com/">Steve Seitz</a>, <a href="https://homes.cs.washington.edu/~curless/">Brian Curless</a> and <a href="https://www.irakemelmacher.com/">Ira Kemelmacher</a>.
+                  I'm a fifth-year Ph.D student in <a href="https://grail.cs.washington.edu/" id="unique-link">GRAIL</a>, University of Washington, advised by <a href="https://www.smseitz.com/" id="unique-link">Steve Seitz</a>, <a href="https://homes.cs.washington.edu/~curless/" id="unique-link">Brian Curless</a> and <a href="https://www.irakemelmacher.com/" id="unique-link">Ira Kemelmacher</a>. I also work closely with <a href="https://holynski.org" id="unique-link"> Aleksander Holynski</a>.
                 </p>
-                  Previously, I received my Master's degree from ETH Zurich, working in the <a href="https://cvg.ethz.ch/">CVG</a> lab. I have also interned at Meta, Adobe Research with <a href="https://richzhang.github.io/"> Richard Zhang</a> <a href="https://taesung.me/"> Taesung Park </a>, and Google Research with <a href="https://holynski.org"> Aleksander Holynski </a> during summers.
+                  Previously, I received my Master's degree from ETH Zurich, working in the <a href="https://cvg.ethz.ch/" id="unique-link">CVG</a> lab. I have also interned at Meta, Adobe Research, and Google Research with  during summer times.
                 <p>
                 <p>
-                  I am broadly interested in generative AI, especially AI for video content creation.
+                  I am broadly interested in visual generative models, especially video models, and how to use these models to help video content creation in real world applications.
                 </p>
                 </p>
                 <p style="text-align:center">
-                  <a href="mailto:xiaojuanwang.cs@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="data/cv.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=v3NXpJAAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://twitter.com/xiaojuan_wang7">Twitter</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/jeanne-wang">Github</a>
+                  <a href="mailto:xiaojuanwang.cs@gmail.com" id="unique-link">Email</a> &nbsp;/&nbsp;
+                  <a href="data/cv.pdf" id="unique-link">CV</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=v3NXpJAAAAAJ&hl=en" id="unique-link">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://twitter.com/xiaojuan_wang7" id="unique-link">Twitter</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/jeanne-wang" id="unique-link">Github</a>
                 </p>
               </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="data/profile2.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="data/profile2.jpg" class="hoverZoomLink"></a>
+              <td style="padding:2.5%; width:40%; max-width:40%; vertical-align:middle; position:relative;" onmouseout="real_photo_stop()" onmouseover="real_photo_start()">
+                <img id="real_photo_image" style="position: absolute; top: 50px; left: 0; width:90%; max-width:90%; display: block;" alt="profile photo" src="data/profile_right.jpg">
+                <img id="illus_image" style="position: absolute; top: 50px; left: 0; width:90%; max-width:90%; display: none;" alt="profile photo" src="data/profile_left.jpg">
+                <script type="text/javascript">
+                    function real_photo_start() {
+                        document.getElementById('real_photo_image').style.display = "block";
+                        document.getElementById('illus_image').style.display = "none";
+                    }
+                    function real_photo_stop() {
+                        document.getElementById('real_photo_image').style.display = "none";
+                        document.getElementById('illus_image').style.display = "block";
+                    }
+                </script>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
+              <td style="padding:0px;width:100%;vertical-align:middle">
                 <h2>Selected Publications</h2>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <!-- <tr onmouseout="keyframe_stop()" onmouseover="keyframe_start()">
+            <tr onmouseout="keyframe_stop()" onmouseover="keyframe_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='keyframe_thumbnail'><video  width=100% height=100% muted autoplay loop>
-                  <source src="projects/keyframe_thumbnail.mp4" type="video/mp4">
+                  <source src="projects/keyframe/keyframe_thumbnail.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                   </video></div>
-                  <img src='projects/keyframe_thumbnail.png' width="160">
+                  <img src='projects/keyframe/keyframe_thumbnail.png' width="160">
                 </div>
                 <script type="text/javascript">
                   function keyframe_start() {
@@ -76,24 +87,19 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
               <span class="papertitle">Generative Keyframe Interpolation with Forward-Backward Consistency</span>
                 <br>
-                <strong>Xiaojuan Wang</strong>,
-                <a href="https://www.linkedin.com/in/zby2003/">Boyang Zhou</a>,
-                <a href="https://holynski.org/">Aleksander Holynski</a>,
-                <a href="https://homes.cs.washington.edu/~curless/">Brian Curless</a>,
-                <a href="https://www.irakemelmacher.com/">Ira Kemelmacher</a>,
-                <a href="https://www.smseitz.com/">Steve Seitz</a>
+                <strong>Xiaojuan Wang</strong>, Boyang Zhou, Brian Curless, Ira Kemelmacher, Aleksander Holynski, Steve Seitz
                 <br>
                 <em>arXiv, 2024 </em>
                 <br>
-                <a href="">project page</a>
+                <a href="https://svd-keyframe-interpolation.github.io/" >project page</a>
                 /
-                <a href="">arXiv (coming soon)</a>
+                <a href="">arXiv</a>
                 <p></p>
                 <p>
-                Given a pair of key frames as input, our method generates a continuous intermediate video with consistent motion (25 frames of size 1024x576) using an image-to-video diffusion model.
+                Given a pair of key frames as input, our method generates a continuous intermediate video with consistent motion (25 frames of size 1024x576) using a pretrained image-to-video diffusion model (Stable Video Diffusion).
                 </p>
               </td>
-            </tr> -->
+            </tr>
 
             <tr onmouseout="recon_stop()" onmouseover="recon_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
@@ -134,7 +140,7 @@
             <tr onmouseout="jumpcut_stop()" onmouseover="jumpcut_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='jumpcut_thumbnail'><video  width=100% height=100% muted autoplay>
+                  <div class="two" id='jumpcut_thumbnail'><video  width=100% height=100% muted autoplay loop>
                   <source src="projects/jumpcut/jumpcut_thumbnail.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                   </video></div>
@@ -168,7 +174,7 @@
                 </p>
               </td>
             </tr>
-            <tr>
+            <!-- <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <img src='projects/octree.png' width="160">
@@ -187,23 +193,92 @@
                 We present a novel framework for multi-view semantic 3D reconstruction that takes the octree of TSDFs fused from different camera views as input, and generates an octree as semantic reconstruction output.
                 </p>
               </td>
-            </tr>
+            </tr> -->
           </tbody></table>
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
-              <td>
-                <h2>Other Works</h2>
+              <td style="padding:0px;width:100%;vertical-align:middle">
+                <h2>Some challenging projects I explored </h2>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <!-- project nba2k -->
             <tr>
-              <td>
-                <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Wang_Supervised_Quantization_for_CVPR_2016_paper.pdf">Supervised quantization for similarity search (CVPR 2016)</a>
+              <td style="width:100%; padding:20px; vertical-align:middle">
+              <span class="papertitle"> &#x2022; Photorealistic NBA2K;</span>
+                
+                <strong>Xiaojuan Wang</strong>, Brian Curless, Ira Kemelmacher, Steve Seitz
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100%; vertical-align:middle">
+                <video width="100%" controls>
+                  <source src="projects/nba2k/clip_005.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100%;vertical-align:middle"> <p>
+                <b>TL;DR: </b> Given a synthetic NBA2K game video (left), we turn it into a corresponding real NBA video (Right), i.e., the court and all players have realistic appearances. Challenge: we do not have such video pairs to directly learn the translation.
+
+                </p> 
+              </td>
+            </tr>
+            <!-- project superresolution -->
+            <tr>
+              <td style="width:100%; padding:20px; vertical-align:middle">
+              <span class="papertitle"> &#x2022; Learn to zoom with close-ups;</span>
+                <strong>Xiaojuan Wang</strong>, Aleksander Holynski, Brian Curless, Ira Kemelmacher, Steve Seitz
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:0px">
+                <table style="width:100%"><tr>
+                  <td style="width:46%; text-align:center; vertical-align:middle;">
+                    <img src=projects/SinSR/input.png width=100% height=auto><br>
+                    <span class="papertitle"> Low-res Input</span>
+                  </td>
+                  <td style="width:46%; text-align:center; vertical-align:middle;">
+                    <img src=projects/SinSR/output.png width=100% height=auto><br>
+                    <span class="papertitle"> High-res Output</span>
+                  </td>
+                  <td style="width:7%; text-align:center; vertical-align:middle;">
+                    <img src=projects/SinSR/ref_patch.png width=100% height=auto><br>
+                    <span class="papertitle"> Close-up Patch</span>
+                  </td>
+                </tr></table>
+              </td>
+            </tr>
+            <tr>
+              <td style="width:100%;vertical-align:middle"> <p>
+                <b>TL;DR: </b> Given a low resolution input image taken by standing far from it, and  a close-up patch that shows the fine details, we synthesize a corresonding high resolution output.
+                </p> 
+              </td>
+            </tr>
+      
+          </tbody></table>
+
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td style="padding:0px;width:100%;vertical-align:middle">
+                <h2>Earlier Works</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:120%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="width:100%; padding:10px; vertical-align:middle">
+                &#x2022; Learning 3D Semantic Reconstruction on Octrees <a href="https://link.springer.com/chapter/10.1007/978-3-030-33676-9_41">(GCPR 2019)</a> <strong>Xiaojuan Wang</strong>, Martin Oswald,  Ian Cherabier, Marc Pollefeys
                 <br>
-                <a href="https://openaccess.thecvf.com/content_iccv_2015/papers/Li_Multi-Scale_Learning_for_ICCV_2015_paper.pdf">Multi-scale learning for low-resolution person re-identification (ICCV 2015)</a>
+                &#x2022; Supervised quantization for similarity search  <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Wang_Supervised_Quantization_for_CVPR_2016_paper.pdf">(CVPR 2016)</a>
+                <strong>Xiaojuan Wang</strong>, Ting Zhang, Guo-Jun Qi, Jinhui Tang, Jingdong Wang  
                 <br>
-                <a href="https://ieeexplore.ieee.org/abstract/document/7137647">Cross-scenario transfer person reidentification (TCSVT 2015)</a>
+                &#x2022; Multi-scale learning for low-resolution person re-identification  <a href="https://openaccess.thecvf.com/content_iccv_2015/papers/Li_Multi-Scale_Learning_for_ICCV_2015_paper.pdf">(ICCV 2015)</a>
+                Xiang Li, Wei-Shi Zheng, <strong>Xiaojuan Wang</strong>, Tao Xiang, Shaogang Gong
+                <br>
+                &#x2022; Cross-scenario transfer person reidentification <a href="https://ieeexplore.ieee.org/abstract/document/7137647">(TCSVT 2015)</a> <strong>Xiaojuan Wang</strong>, Wei-Shi Zheng, Xiang Li, Jianguo Zhang
               </td>
             </tr>   
             
@@ -211,7 +286,7 @@
 
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
-              <td>
+              <td style="padding:0px;width:100%;vertical-align:middle">
                 <h2>Miscellanea</h2>
               </td>
             </tr>
@@ -228,32 +303,7 @@
             </tr>   
             
           </tbody></table>
-          <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-            <tr>
-              <td>
-                <h2>Miscellanea</h2>
-              </td>
-            </tr>
-          </tbody></table>
-
-          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
-              <td width="75%" valign="center">
-                <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>
-                <br>
-                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
-                <br>
-                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
-                <br>
-                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Award Committee Member, CVPR 2021</a>
-                <br>
-                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
-                <br>
-                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
-              </td>
-            </tr>   
-          </tbody></table> -->
+          
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:0px">

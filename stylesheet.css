@@ -133,3 +133,7 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+#unique-link {
+    color: #000000;
+    text-decoration: underline;
+}
