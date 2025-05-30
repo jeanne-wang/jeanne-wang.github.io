@@ -11,7 +11,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://jeanne-wang.github.io/"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="data/uw.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="data/image.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -49,25 +49,12 @@
                   <i class="fa fa-fw fa-github" aria-hidden="true"></i> <a href="https://github.com/jeanne-wang" id="unique-link">Github</a>
                 </p>
               </td>
-              <!-- <td style="padding:2.5%; width:40%; max-width:40%; vertical-align:middle; position:relative;" onmouseout="real_photo_stop()" onmouseover="real_photo_start()">
-                <img id="real_photo_image" style="position: absolute; top: 50px; left: 0; width:90%; max-width:90%; display: none;" alt="profile photo" src="data/profile copy.JPG">
-                <img id="illus_image" style="position: absolute; top: 50px; left: 0; width:90%; max-width:90%; display: block;" alt="profile photo" src="data/profile copy.JPG">
-                <script type="text/javascript">
-                    function real_photo_start() {
-                        document.getElementById('real_photo_image').style.display = "block";
-                        document.getElementById('illus_image').style.display = "none";
-                    }
-                    function real_photo_stop() {
-                        document.getElementById('real_photo_image').style.display = "none";
-                        document.getElementById('illus_image').style.display = "block";
-                    }
-                </script>
-              </td> -->
                <td style="padding:0.0%;width:40%;max-width:40%">
                 <a href="data/profile.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="data/profile.jpg" class="hoverZoomLink"></a>
               </td>
             </tr>
           </tbody></table>
+           
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:0px;width:100%;vertical-align:middle">
@@ -75,9 +62,51 @@
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table id="publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="dance_stop()" onmouseover="dance_start()">
+              <td style="padding:24px 40px 24px 8px;width:15%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='dance_thumbnail'><video  width=100% height=100% muted autoplay loop>
+                  <source src="projects/animals-dance/marmot_thumbnail.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='projects/animals-dance/marmot_thumbnail.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function dance_start() {
+                    document.getElementById('dance_thumbnail').style.opacity = "1";
+                  }
+
+                  function dance_stop() {
+                    document.getElementById('dance_thumbnail').style.opacity = "0";
+                  }
+                  recon_stop()
+                </script>
+              </td>
+              <td style="padding:24px 8px 24px 8px;width:85%;vertical-align:middle">
+              <span class="papertitle">How Animals Dance (When You're Not Looking)</span>
+                <br>
+                <strong>Xiaojuan Wang</strong>,  Aleksander Holynski, Brian Curless, Ira Kemelmacher, Steve Seitz
+                <br>
+                <em>arXiv Preprint, 2025</em> 
+                <br>
+                <a href="https://how-animals-dance.github.io/">project page</a>
+                /
+                <a href="https://arxiv.org/abs/2505.23738">arXiv</a>
+                <p></p>
+                <p>
+                Starting from a small set of generated keyframes, e.g., a marmot in various poses, our method generates an animal dance video that follows a specified choreography pattern, extracted from a reference dance video.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" style="height:0; padding:0;">
+                <div style="height:1px; background:#ccc; box-shadow:0 2px 6px #bbb; margin:0 0 0 0;"></div>
+              </td>
+            </tr>
+
             <tr onmouseout="keyframe_stop()" onmouseover="keyframe_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td style="padding:24px 40px 24px 8px;width:15%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='keyframe_thumbnail'><video  width=100% height=100% muted autoplay loop>
                   <source src="projects/keyframe/keyframe_thumbnail.mp4" type="video/mp4">
@@ -96,7 +125,7 @@
                   keyframe_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:100%;vertical-align:middle">
+              <td style="padding:24px 8px 24px 8px;width:85%;vertical-align:middle">
               <span class="papertitle">Generative Inbetweening: Adapting Image-to-Video Models for Keyframe Interpolation</span>
                 <br>
                 <strong>Xiaojuan Wang</strong>, Boyang Zhou, Brian Curless, Ira Kemelmacher, Aleksander Holynski, Steve Seitz
@@ -112,9 +141,14 @@
                 </p>
               </td>
             </tr>
+            <tr>
+              <td colspan="2" style="height:0; padding:0;">
+                <div style="height:1px; background:#ccc; box-shadow:0 2px 6px #bbb; margin:0 0 0 0;"></div>
+              </td>
+            </tr>
 
             <tr onmouseout="recon_stop()" onmouseover="recon_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td style="padding:24px 40px 24px 8px;width:15%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='zoom_thumbnail'><video  width=100% height=100% muted autoplay loop>
                   <source src="projects/zoom/zoom_thumbnail.mp4" type="video/mp4">
@@ -133,7 +167,7 @@
                   recon_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td style="padding:24px 8px 24px 8px;width:85%;vertical-align:middle">
         			<span class="papertitle">Generative Powers of Ten</span>
                 <br>
                 <strong>Xiaojuan Wang</strong>, Janne Kontkanen, Brian Curless, Steve Seitz, Ira Kemelmacher, Ben Mildenhall, Pratul P. Srinivasan, Dor Verbin, Aleksander Holynski
@@ -149,8 +183,14 @@
                 </p>
               </td>
             </tr>
+            <tr>
+              <td colspan="2" style="height:0; padding:0;">
+                <div style="height:1px; background:#ccc; box-shadow:0 2px 6px #bbb; margin:0 0 0 0;"></div>
+              </td>
+            </tr>
+
             <tr onmouseout="jumpcut_stop()" onmouseover="jumpcut_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td style="padding:24px 40px 24px 8px;width:15%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='jumpcut_thumbnail'><video  width=100% height=100% muted autoplay loop>
                   <source src="projects/jumpcut/jumpcut_thumbnail.mp4" type="video/mp4">
@@ -169,7 +209,7 @@
                   jumpcut_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td style="padding:24px 8px 24px 8px;width:85%;vertical-align:middle">
               <span class="papertitle">Jump Cut Smoothing for Talking Heads</span>
                 <br>
                 <strong>Xiaojuan Wang</strong>,
@@ -186,6 +226,11 @@
                 </p>
               </td>
             </tr>
+            <tr>
+              <td colspan="2" style="height:0; padding:0;">
+                <div style="height:1px; background:#ccc; box-shadow:0 2px 6px #bbb; margin:0 0 0 0;"></div>
+              </td>
+            </tr>
           </tbody></table>
           <br>
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
@@ -195,7 +240,7 @@
               </td>
             </tr>
           </tbody></table>
-          <table width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table id="projects" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <!-- project nba2k -->
             <tr>
               <td style="width:100%; padding:20px; vertical-align:middle">
@@ -219,37 +264,6 @@
                 </p> 
               </td>
             </tr>
-            <!-- project superresolution -->
-            <!-- <tr>
-              <td style="width:100%; padding:20px; vertical-align:middle">
-              <span class="papertitle"> &#x2022; Learn to zoom with close-ups;</span>
-                <strong>Xiaojuan Wang</strong>, Aleksander Holynski, Brian Curless, Ira Kemelmacher, Steve Seitz
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:0px">
-                <table style="width:100%"><tr>
-                  <td style="width:46%; text-align:center; vertical-align:middle;">
-                    <img src=projects/SinSR/input.png width=100% height=auto><br>
-                    <span class="papertitle"> Low-res Input</span>
-                  </td>
-                  <td style="width:46%; text-align:center; vertical-align:middle;">
-                    <img src=projects/SinSR/output.png width=100% height=auto><br>
-                    <span class="papertitle"> High-res Output</span>
-                  </td>
-                  <td style="width:7%; text-align:center; vertical-align:middle;">
-                    <img src=projects/SinSR/ref_patch.png width=100% height=auto><br>
-                    <span class="papertitle"> Close-up Patch</span>
-                  </td>
-                </tr></table>
-              </td>
-            </tr>
-            <tr>
-              <td style="width:100%;vertical-align:middle"> <p>
-                <b>TL;DR: </b> Given a low resolution input image taken by standing far from it, and  a close-up patch that shows the fine details, we synthesize a corresonding high resolution output.
-                </p> 
-              </td>
-            </tr> -->
           </tbody></table>
 
           <br>
@@ -260,7 +274,7 @@
               </td>
             </tr>
           </tbody></table>
-          <table style="width:120%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table id="earlier" style="width:120%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="width:100%; padding:10px; vertical-align:middle">
                 &#x2022; Learning 3D semantic reconstruction on octrees <a href="https://link.springer.com/chapter/10.1007/978-3-030-33676-9_41">(GCPR 2019)</a>; <strong>Xiaojuan Wang</strong>, Martin Oswald,  Ian Cherabier, Marc Pollefeys
@@ -285,7 +299,7 @@
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table id="misc" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td>
                 My first name in Chinese is 小鹃，which means "a little cuckoo bird". You can call me "jeanne".
